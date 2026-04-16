@@ -9,7 +9,7 @@ public class PurchaseProductTestSuite extends CommonTestSuites {
     @Test
     public void purchase_inStock_product(){
 
-    hp.access_to_menu_by_name("Contact");
+    hp.move_to_menu_by_name("Boutique");
 
 
 

@@ -2,6 +2,8 @@ package pages;
 
 import helper.Utility;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
 public class HomePage {
 
@@ -16,6 +18,17 @@ public class HomePage {
     public void access_to_menu_by_name(String page_name){
 
         Utility.driver.findElement(By.xpath("//ul[@id='menu-main-menu']//a[normalize-space()='"+page_name+"']")).click();
+
+
+    }
+
+    public void move_to_menu_by_name(String page_name){
+
+        Actions act = new Actions(Utility.driver);
+
+        WebElement menu_element = Utility.driver.findElement(By.xpath("//ul[@id='menu-main-menu']//a[normalize-space()='"+page_name+"']"));
+
+        act.moveToElement(menu_element).perform();
 
 
     }
