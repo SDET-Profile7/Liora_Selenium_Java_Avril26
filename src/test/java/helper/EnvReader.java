@@ -16,4 +16,10 @@ public class EnvReader {
     {
         return  Dotenv.load().get("VALID_PASSWORD");
     }
+
+    public static String get_browser(){
+
+        return Dotenv.load().get("BROWSER");
+
+    }
 }
