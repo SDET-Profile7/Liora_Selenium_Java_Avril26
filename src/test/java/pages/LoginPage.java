@@ -4,7 +4,7 @@ import helper.Utility;
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class LoginPage {
+public class LoginPage extends  BasePage {
 
 
 
@@ -15,7 +15,7 @@ public class LoginPage {
 
         Utility.driver.findElement(By.xpath("//input[@id='username']")).sendKeys(username);
         Utility.driver.findElement(By.xpath("//input[@id='password']")).sendKeys(password);
-        Utility.driver.findElement(By.xpath("//button[@value='Log in']")).click();
+        click_to_element("//button[@value='Log in']");
 
     }
 

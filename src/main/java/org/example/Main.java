@@ -1,17 +1,30 @@
 package org.example;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+
 public class Main {
 
 
     public static void main(String[] args) {
 
 
-        Calculatrice cc = new Calculatrice();
+        WebDriver driver = null;
 
-        System.out.println(cc.addition(5543, 8764));
-        System.out.println(cc.addition(765444, 878864));
-        System.out.println(cc.addition(65, 98));
-        System.out.println(cc.addition(123, 8764));
+        String browser = null;
+
+        if (browser.equals("chrome")){
+
+                driver  = new ChromeDriver();
+
+        } else if (browser.equals("edge")) {
+
+            driver = new EdgeDriver();
+
+        }
+
+        driver.get("");
 
 
 

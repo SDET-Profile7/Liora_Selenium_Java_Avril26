@@ -1,11 +1,11 @@
 package helper;
 
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.WebDriver;
 
 public class Utility {
 
 
-    public static ChromeDriver driver;
+    public static WebDriver driver;
 
 
 
