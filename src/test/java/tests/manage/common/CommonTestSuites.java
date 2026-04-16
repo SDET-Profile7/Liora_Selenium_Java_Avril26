@@ -14,10 +14,10 @@ import pages.ProductPage;
 public class CommonTestSuites {
 
 
-   public BasePage bp = new BasePage();
-   public  HomePage hp = new HomePage();
-   public LoginPage lp = new LoginPage();
-   public ProductPage pp = new ProductPage();
+   public BasePage bp;
+   public  HomePage hp ;
+   public LoginPage lp;
+   public ProductPage pp ;
 
     @BeforeEach
     public void init() throws InterruptedException {
@@ -46,7 +46,10 @@ public class CommonTestSuites {
 
 
        }
-
+        bp = new BasePage();
+        hp = new HomePage();
+        lp = new LoginPage();
+        pp = new ProductPage();
         bp.access_to_url("https://shop-in.ovh/");
 
     }
