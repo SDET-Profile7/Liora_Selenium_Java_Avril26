@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
-public class HomePage {
+public class HomePage extends BasePage {
 
 
     public void access_to_my_account(){
@@ -35,7 +35,8 @@ public class HomePage {
 
     public void access_to_sub_menu_by_name(String subMenu){
 
-        Utility.driver.findElement(By.xpath("//ul[@id='menu-main-menu']//ul[@class='sub-menu']//a[normalize-space()='"+subMenu+"']")).click();
+        click_to_element("//ul[@id='menu-main-menu']//ul[@class='sub-menu']//a[normalize-space()='"+subMenu+"']");
+
     }
 
 
