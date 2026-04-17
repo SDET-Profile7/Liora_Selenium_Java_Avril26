@@ -11,7 +11,7 @@ public class LoginTestSuite extends CommonTestSuites {
     @Test
     public void connect_with_invalid_username(){
         hp.access_to_my_account();
-        lp.login("", "yyyyyy");
+        lp.login("amira", "**Shopin01/**");
         Assertions.assertTrue(lp.getErrorText().contains("Username is required"));
 
     }
