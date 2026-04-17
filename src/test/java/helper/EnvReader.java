@@ -4,6 +4,13 @@ import io.github.cdimascio.dotenv.Dotenv;
 
 public class EnvReader {
 
+    public static String getURL()
+    {
+
+        return  Dotenv.load().get("URL");
+
+    }
+
 
     public static String validUsername()
     {
